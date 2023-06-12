@@ -1,0 +1,35 @@
+<!DOCTYPE html><!--Azumbra-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src = "stringsSound().js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "body.css">
+    <title>Credential check</title>
+</head>
+<body>
+    <head>
+        <a href="page3-4.html">Back</a>
+    </head>
+    <p id = "Updated string"> String update: </p>
+    <p id = "Updated string2"> String update: </p>
+    <form id ="creditSubmit" onsubmit="return false">
+    
+    First name: <input type="text" id = "String"/>
+    <br>
+    Last name: <input type = "text" id = "String2"/>
+    <br>
+    Zip Code: <input type = "text" id = "String3"/>
+    <input type = "submit" onclick = "strings();" />
+    <input type = "submit" onclick = "strings2();" />
+    </form>
+    <img src = "UCSC Walker Class Destroyer.png" />
+    <audio id="myAudio"> <!--Update:Calling the "myAudio id to be used in the JavaScript"-->
+    <source src="us-lab-background-1.mp3" type="audio/mpeg"> <!--adding sound file to credential script-->
+
+    </audio>
+    <button onclick="playAudio()" type="button">Play Audio</button> <!--added play audio controls to trigger audio in addition to the original play audio in the if else statement -->
+    <button onclick="pauseAudio()" type="button">Pause Audio</button> 
+</body>
+</html>
